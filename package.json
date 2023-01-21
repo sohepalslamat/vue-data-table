@@ -1,0 +1,69 @@
+{
+  "name": "@sohep/vue-data-table",
+  "version": "0.0.2",
+  "description": "Data table component integrated with pagination, search and filter easily made with Vue3",
+  "author": {
+    "name": "Sohaib Alslamat",
+    "email": "sohep.alslamat91@gmail.com",
+    "url": "https://github.com/sohepalslamat",
+    "company": "Vuango"
+  },
+  "keywords": [
+    "data table",
+    "nuxt3",
+    "filter",
+    "pagination",
+    "search",
+    "fetch",
+    "vue3",
+    "vuejs",
+    "Vuango"
+  ],
+  "files": [
+    "dist/*"
+  ],
+  "main": "./dist/vue-data-table.umd.js",
+  "module": "./dist/vue-data-table.es.js",
+  "browser": "./dist/vue-data-table.es.js",
+  "types": "./dist/vue-data-table.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-data-table.es.js",
+      "require": "./dist/vue-data-table.umd.js"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check build-only",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "deploy": "sh ./deploy.sh"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@types/node": "^18.11.12",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "@vue/tsconfig": "^0.1.3",
+    "axios": "^1.2.2",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "~4.7.4",
+    "vite": "^4.0.0",
+    "vite-plugin-css-injected-by-js": "^2.4.0",
+    "vite-plugin-dts": "^1.7.1",
+    "vue-tsc": "^1.0.12"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohepalslamat/vue-sfp-services"
+  }
+}
